@@ -19,7 +19,7 @@ Time spent: Around 6 hours spent in total
     * [x] Optional: User can see a counter with total number of characters left for tweet
 
 Optional
-    * [x] Advanced: Improve the user interface and theme the app to feel "twitter branded"
+* [x] Advanced: Improve the user interface and theme the app to feel "twitter branded"
 
 
 ![Video Walkthrough](imagesearch.gif)
