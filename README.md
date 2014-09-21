@@ -22,4 +22,4 @@ Optional
 * [x] Advanced: Improve the user interface and theme the app to feel "twitter branded"
 
 
-![Video Walkthrough](imagesearch.gif)
+![Video Walkthrough](twitter.gif)
