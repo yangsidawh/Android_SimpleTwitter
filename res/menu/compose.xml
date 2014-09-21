@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sida.apps.simpletwitter.ComposeActivity" >
+    <item
+        android:id="@+id/label_length"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:title="140"/>
+    <item
+        android:id="@+id/action_tweet"
+        android:onClick="onTweetClick"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_tweet"/>
+</menu>
