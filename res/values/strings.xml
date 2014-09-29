@@ -9,4 +9,6 @@
     <string name="action_compose">Compose</string>
     <string name="title_activity_compose"> New tweet</string>
     <string name="action_tweet">Tweet</string>
+    <string name="action_profile">Profile</string>
+    <string name="title_activity_profile">Profile</string>
 </resources>

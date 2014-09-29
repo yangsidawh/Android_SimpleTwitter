@@ -93,10 +93,8 @@ public class ComposeActivity extends Activity {
 			client.sendTweet(new JsonHttpResponseHandler() {
 				@Override
 				public void onSuccess(JSONObject json) {
-					Tweet tweet = Tweet.fromJson(json);
-					
+					Tweet tweet = Tweet.fromJson(json);			
 					Intent i = new Intent();
-					
 					i.putExtra("tweet", tweet);
 					setResult(RESULT_OK, i);
 					finish();

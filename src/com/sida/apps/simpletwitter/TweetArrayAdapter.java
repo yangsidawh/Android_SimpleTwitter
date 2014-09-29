@@ -3,6 +3,7 @@ package com.sida.apps.simpletwitter;
 import java.util.List;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,12 +18,13 @@ import com.sida.apps.simpletwitter.models.Tweet;
 public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 	Typeface typeLight;
 	Typeface typeThin;
+	Intent i;
 
 	public TweetArrayAdapter(Context context, List<Tweet> tweets) {
 		super(context, 0, tweets);
 		typeLight = Typeface.createFromAsset(context.getAssets(),"font/Roboto-Light.ttf"); 
 		typeThin = Typeface.createFromAsset(context.getAssets(),"font/Roboto-Thin.ttf"); 
-
+		i = new Intent(context, ProfileActivity.class);    
 	}
 
 	@Override
@@ -43,6 +45,7 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 		TextView tvBody = (TextView) v.findViewById(R.id.tvBody);
 		
 		ivProfile.setImageResource(android.R.color.transparent);
+		ivProfile.setTag(tweet.getUser().getScreenName());
 		ImageLoader loader = ImageLoader.getInstance();
 		loader.displayImage(tweet.getUser().getProfilePic(), ivProfile);
 		tvUsername.setText(tweet.getUser().getName());
